@@ -97,13 +97,13 @@ fi
 systemctl restart user &>>$LOGFILE
 VALIDATE $? "Restarting user"
 
-
-
 echo -e "${G}User installation completed successfully${N}"
 echo "Log file: $LOGFILE"
 
 echo "***************************************"
 sudo systemctl status user
+echo "***************************************"
+sudo netstat -lntp
 echo "***************************************"
 sudo ps -ef | grep user
 echo "***************************************"

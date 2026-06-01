@@ -53,5 +53,7 @@ echo "Log file: $LOGFILE"
 echo "***************************************"
 sudo systemctl status mysqld
 echo "***************************************"
+sudo netstat -lntp
+echo "***************************************"
 sudo ps -ef | grep mysqld
 echo "***************************************"

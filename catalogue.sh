@@ -103,5 +103,7 @@ echo "Log file: $LOGFILE"
 echo "***************************************"
 sudo systemctl status catalogue
 echo "***************************************"
+sudo netstat -lntp
+echo "***************************************"
 sudo ps -ef | grep catalogue
 echo "***************************************"

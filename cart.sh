@@ -84,5 +84,7 @@ echo "Log file: $LOGFILE"
 echo "***************************************"
 sudo systemctl status cart
 echo "***************************************"
+sudo netstat -lntp
+echo "***************************************"
 sudo ps -ef | grep cart
 echo "***************************************"

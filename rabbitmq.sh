@@ -60,5 +60,7 @@ echo "Log file: $LOGFILE"
 echo "***************************************"
 sudo systemctl status rabbitmq-server
 echo "***************************************"
+sudo netstat -lntp
+echo "***************************************"
 sudo ps -ef | grep rabbitmq-server
 echo "***************************************"

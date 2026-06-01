@@ -99,5 +99,7 @@ echo "Log file: $LOGFILE"
 echo "***************************************"
 sudo systemctl status shipping
 echo "***************************************"
+sudo netstat -lntp
+echo "***************************************"
 sudo ps -ef | grep shipping
 echo "***************************************"
