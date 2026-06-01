@@ -28,7 +28,8 @@ else
 fi
 }
 
-cp mongo.repo /etc/yum.repos.d/mongo.repo &>>$LOGFILE
+
+cp /home/ec2-user/3.11.roboshop-app-infra-standard-shellscript/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>$LOGFILE
 VALIDATE $? "Copied mongo repo"
 
 dnf install mongodb-org -y &>>$LOGFILE

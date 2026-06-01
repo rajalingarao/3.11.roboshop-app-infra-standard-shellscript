@@ -64,7 +64,7 @@ VALIDATE $? "Downloading Go dependencies"
 go build &>>"$LOGFILE"
 VALIDATE $? "Building Dispatch application"
 
-cp /home/ec2-user/3.7.roboshop-app-shellscript/dispatch.service /etc/systemd/system/dispatch.service &>>"$LOGFILE"
+cp /home/ec2-user/3.11.roboshop-app-infra-standard-shellscript/dispatch.service /etc/systemd/system/dispatch.service &>>"$LOGFILE"
 VALIDATE $? "Copying systemd service file"
 
 systemctl daemon-reload &>>"$LOGFILE"
