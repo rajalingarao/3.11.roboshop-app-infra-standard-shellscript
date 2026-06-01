@@ -66,7 +66,7 @@ VALIDATE $? "extracting cart"
 npm install &>>$LOGFILE
 VALIDATE $? "Installing nodejs dependencies"
 
-cp cp /home/ec2-user/3.11.roboshop-app-infra-standard-shellscript/cart.service /etc/systemd/system/cart.service &>>$LOGFILE
+cp /home/ec2-user/3.11.roboshop-app-infra-standard-shellscript/cart.service /etc/systemd/system/cart.service &>>$LOGFILE
 VALIDATE $? "Copied cart service"
 
 systemctl daemon-reload &>>$LOGFILE
