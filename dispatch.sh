@@ -50,7 +50,7 @@ rm -rf /app &>>"$LOGFILE"
 mkdir -p /app &>>"$LOGFILE"
 VALIDATE $? "Creating /app directory"
 
-curl -L -o /tmp/dispatch.zip https://roboshop-builds.s3.amazonaws.com/dispatch.zip
+curl -L -o /tmp/dispatch.zip https://roboshop-builds.s3.amazonaws.com/dispatch.zip &>>"$LOGFILE"
 VALIDATE $? "Downloading Dispatch code"
 
 cd /app
